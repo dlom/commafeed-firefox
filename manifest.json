@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Commafeed",
+	"version": "1.0",
+	"description": "CommaFeed add-on for Firefox",
+	"homepage_url": "https://github.com/dlom/commafeed-firefox",
+	"icons": {
+		"128": "icon128.png"
+	},
+
+	"permissions": [
+		"tabs",
+		"alarms",
+		"*://*.commafeed.com/*"
+	],
+
+	"browser_action": {
+		"default_icon": "icon128.png",
+		"default_title": "CommaFeed"
+	},
+
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
