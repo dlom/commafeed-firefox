@@ -6,7 +6,7 @@ node_js:
 install:
  - npm install -g web-ext
 
-script: web-ext lint
+script: git describe
 
 before_deploy:
  - web-ext sign --artifacts-dir build --ignore-files build/ LICENSE
@@ -19,4 +19,4 @@ deploy:
   file: build/commafeed-$TRAVIS_TAG.xpi
   skip_cleanup: true
   on:
-    repo: dlom/commafeed-firefox
+    tags: true
