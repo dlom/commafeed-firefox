@@ -6,7 +6,7 @@ node_js:
 install:
  - npm install -g web-ext
 
-script: git describe
+script: git describe --always
 
 before_deploy:
  - web-ext sign --artifacts-dir build --ignore-files build/ LICENSE
