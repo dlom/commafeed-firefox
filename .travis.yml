@@ -10,7 +10,6 @@ script: git describe --always
 
 before_deploy:
  - web-ext sign --artifacts-dir build --ignore-files build/ LICENSE
- - mv build/*.xpi build/commafeed-$TRAVIS_TAG.xpi
 
 deploy:
   provider: releases
