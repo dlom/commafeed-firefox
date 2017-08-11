@@ -1,6 +1,6 @@
 let url = "https://www.commafeed.com";
 let alarmName = "commafeed-checker";
-let checkInterval = 0.2; // minutes
+let checkInterval = 1; // minutes
 
 browser.browserAction.onClicked.addListener(function() {
 	browser.tabs.query({
