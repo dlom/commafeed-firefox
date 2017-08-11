@@ -16,7 +16,8 @@ deploy:
   provider: releases
   api_key:
     secure: igFIOC9T0SnHYdX/+F0MLDGwLnXMvSELFpYDMb2TKu3uN5qPtcU11rlU6OH05DWzfPeX6ZcOxfTLTKx6mHnoheqqecwACiJhVecim4Gs2uNT2UPpBvH3SH+JLVQWA5gibzLj5ijZzWWpS3tKP6IH4i3v1OJ6kEyR1KAgUOV8EJDZsRvUqCPLuKjYvOLFQH4Kp4dB0yx0yd4W1MUjt6Ylmca2QX7B6RK44/DosrGytUw/hDb3vTPdLlHZPUfBI57c3KuJBOX8u2RGRqnL0h7s6Lx/ymdA4+OMrrDkKWftL06nzxCIlI8rTPsNwaxI6LCR+3RjbUJJocrGfqc6/qGbjHAlpAjySQtAQqWe+AGaro75cr3NChplop4Y5EWIiizbvPFUrWZGKP8pe6ItaNmh6vNVe111zOYWZQj/WQd8VOKh15MHO+W7ReU5hd+Nms+b4NHZ7s+c/PsMKehQRnY9xkXYsvS5RAKrXCBt9w4OgtZ+/629RZ1qOL2yS67o1sTXoA7e+FxAaqH7rmHUg3r+PtqjxKJEPz2Lc9hCd/Mjg90J+LBlVNdSautaFLEcxfG79iEN7QOypmKk3PG2TUNlPkjoSdGPBPCxZMBk+DD9sVPZKN8LskP6/Ksd5U+J9Lv5Gqk8s5/Yg4CMmwh66L5rFV3TquDXmbY9W/MKkVoG4mI=
-  file: build/commafeed-$TRAVIS_TAG.xpi
+  file_glob: true
+  file: build/*.xpi
   skip_cleanup: true
   on:
     tags: true
